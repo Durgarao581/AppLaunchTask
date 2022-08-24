@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SectionThreeCell" customModule="AppLaunchTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="111"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="me7-EY-DSB" customClass="CardView" customModule="AppLaunchTask" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="219" height="95"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondThree" translatesAutoresizingMaskIntoConstraints="NO" id="7VN-Dy-7fv">
+                                <rect key="frame" x="0.0" y="0.0" width="219" height="95"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upto 60% OFF" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npx-6D-Q4Y">
+                                <rect key="frame" x="12" y="16" width="195" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers that will leave you stumped" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDr-LK-47g">
+                                <rect key="frame" x="12" y="47" width="195" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tDr-LK-47g" firstAttribute="leading" secondItem="Npx-6D-Q4Y" secondAttribute="leading" id="3ip-ew-g3K"/>
+                            <constraint firstAttribute="bottom" secondItem="7VN-Dy-7fv" secondAttribute="bottom" id="4P4-II-xp9"/>
+                            <constraint firstItem="tDr-LK-47g" firstAttribute="top" secondItem="Npx-6D-Q4Y" secondAttribute="bottom" constant="8" id="A8f-vm-VXl"/>
+                            <constraint firstItem="7VN-Dy-7fv" firstAttribute="leading" secondItem="me7-EY-DSB" secondAttribute="leading" id="F7v-Pb-5Nl"/>
+                            <constraint firstItem="Npx-6D-Q4Y" firstAttribute="top" secondItem="me7-EY-DSB" secondAttribute="top" constant="16" id="Gta-zj-YnX"/>
+                            <constraint firstItem="7VN-Dy-7fv" firstAttribute="top" secondItem="me7-EY-DSB" secondAttribute="top" id="WYi-oJ-5f3"/>
+                            <constraint firstAttribute="trailing" secondItem="Npx-6D-Q4Y" secondAttribute="trailing" constant="12" id="Zs2-rV-cgs"/>
+                            <constraint firstItem="Npx-6D-Q4Y" firstAttribute="leading" secondItem="me7-EY-DSB" secondAttribute="leading" constant="12" id="a18-qs-caY"/>
+                            <constraint firstItem="tDr-LK-47g" firstAttribute="trailing" secondItem="Npx-6D-Q4Y" secondAttribute="trailing" id="sTN-hE-6vJ"/>
+                            <constraint firstAttribute="trailing" secondItem="7VN-Dy-7fv" secondAttribute="trailing" id="sf6-TV-KmM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="me7-EY-DSB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Crr-c2-NgI"/>
+                <constraint firstAttribute="trailing" secondItem="me7-EY-DSB" secondAttribute="trailing" constant="8" id="fRb-Yx-BXb"/>
+                <constraint firstItem="me7-EY-DSB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="q5t-1D-Cf6"/>
+                <constraint firstAttribute="bottom" secondItem="me7-EY-DSB" secondAttribute="bottom" constant="8" id="tUi-JF-rKd"/>
+            </constraints>
+            <size key="customSize" width="235" height="111"/>
+            <point key="canvasLocation" x="271.73913043478262" y="116.18303571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="secondThree" width="1380" height="920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
